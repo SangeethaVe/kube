@@ -1,0 +1,34 @@
+********** PLEASE FIND THE USAGE OF KND TOOL ************
+
+Kubernetes NGINX deployer
+
+KND(1)
+
+NAME
+
+    knd
+
+SYNOPSIS
+
+knd [create/update/delete deployment] [--replicas=replicas] [--nginx_version=version] [--deployment_name=deployment-name]
+
+  Create ngnix deployment:
+
+    knd --action create --replicas <no of replicas> --deployment_name <name of the deployment>
+
+  Update ngnix deployment:
+
+    knd --action update --version < ngnix vers eg. nginx:1.16.0> --deployment_name <name of the deployment>
+
+  Delete deployment:
+
+    knd --action delete --deployment_name <name of the deployment>
+
+
+DESCRIPTION
+
+    knd (Kubernetes NGINX deployer) deploys NGINX on a Kubernetes cluster, and verifies that it has come up healthy.
+
+    A CLI progress bar is provided to indicate the deployment/scaling progress.
+
+    The application can be deployed with a configurable number of replicas
